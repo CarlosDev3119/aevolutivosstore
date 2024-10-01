@@ -1,0 +1,6 @@
+pandas
+sqlalchemy
+numpy
+matplotlib
+deap
+scikit-learn

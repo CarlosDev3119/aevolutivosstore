@@ -1,0 +1,13 @@
+services:
+  store:
+    image: postgres:15.7
+    container_name: store-db
+    restart: always
+    ports:
+      - 5435:5432
+    environment:
+      - POSTGRES_USER=dinamita
+      - POSTGRES_PASSWORD=123123
+      - POSTGRES_DB=storeDB
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
